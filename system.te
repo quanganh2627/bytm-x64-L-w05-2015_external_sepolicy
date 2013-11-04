@@ -20,3 +20,8 @@ allow system apk_private_tmp_file:file relabelto;
 
 # Access to wake locks
 allow system sysfs_wake_lock:file rw_file_perms;
+
+# Read and delete files under /dev/fscklogs.
+r_dir_file(system, fscklogs)
+allow system fscklogs:dir { write remove_name };
+allow system fscklogs:file unlink;
