@@ -55,6 +55,7 @@ allow domain null_device:chr_file rw_file_perms;
 allow domain zero_device:chr_file r_file_perms;
 allow domain ashmem_device:chr_file rw_file_perms;
 allow domain binder_device:chr_file rw_file_perms;
+allow domain graphics_device:chr_file rw_file_perms;
 allow domain ptmx_device:chr_file rw_file_perms;
 allow domain powervr_device:chr_file rw_file_perms;
 allow domain log_device:dir search;
