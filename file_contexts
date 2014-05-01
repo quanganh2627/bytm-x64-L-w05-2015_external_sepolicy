@@ -46,6 +46,7 @@
 /dev/cpuctl(/.*)?	u:object_r:cpuctl_device:s0
 /dev/device-mapper	u:object_r:dm_device:s0
 /dev/eac		u:object_r:audio_device:s0
+/dev/fscklogs(/.*)?	u:object_r:fscklogs:s0
 /dev/full		u:object_r:full_device:s0
 /dev/fuse		u:object_r:fuse_device:s0
 /dev/graphics(/.*)?	u:object_r:graphics_device:s0
@@ -212,6 +213,8 @@
 /sys/devices/platform/nfc-power/nfc_power -- u:object_r:sysfs_nfc_power_writable:s0
 /sys/class/rfkill/rfkill[0-9]*/state -- u:object_r:sysfs_bluetooth_writable:s0
 /sys/class/rfkill/rfkill[0-9]*/type -- u:object_r:sysfs_bluetooth_writable:s0
+/sys/power/wake_lock -- u:object_r:sysfs_wake_lock:s0
+/sys/power/wake_unlock -- u:object_r:sysfs_wake_lock:s0
 #############################
 # asec containers
 /mnt/asec(/.*)?         u:object_r:asec_apk_file:s0
