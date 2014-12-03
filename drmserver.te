@@ -50,3 +50,4 @@ allow drmserver drmserver_service:service_manager add;
 # /oem access
 allow drmserver oemfs:dir search;
 allow drmserver oemfs:file r_file_perms;
+allow drmserver mei_device:chr_file { open ioctl read write };
